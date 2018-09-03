@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.dooble.phonertc"
+    id="nl.neatsoft.phonertc"
     version="2.1.0">
 
 	<name>PhoneRTC</name>
@@ -30,7 +30,7 @@ In order to install PhoneRTC on iOS, please follow these steps:
 3) In `General`, change `Deployment Target` to 7.0 or above
 4) Go to `Build Settings` and change:
       `Objective-C Bridging Header` => 
-           [ProjectName]/Plugins/com.dooble.phonertc/Bridging-Header.h
+           [ProjectName]/Plugins/nl.neatsoft.phonertc/Bridging-Header.h
       `Runpath Search Paths` => 
            $(inherited) @executable_path/Frameworks
 5) Go to `Build Phases` and unfold `Link Binary With Libraries`
@@ -101,16 +101,16 @@ In order to install PhoneRTC on iOS, please follow these steps:
     </platform>
 
     <platform name="android">
-        <source-file src="src/android/com/dooble/phonertc/PhoneRTCPlugin.java" target-dir="app/src/com/dooble/phonertc" />
-        <source-file src="src/android/com/dooble/phonertc/Session.java" target-dir="app/src/com/dooble/phonertc" />
-		<source-file src="src/android/com/dooble/phonertc/SessionConfig.java" target-dir="app/src/com/dooble/phonertc" />
-        <source-file src="src/android/com/dooble/phonertc/VideoGLView.java" target-dir="app/src/com/dooble/phonertc" />
-    	<source-file src="src/android/com/dooble/phonertc/VideoConfig.java" target-dir="app/src/com/dooble/phonertc" />
-    	<source-file src="src/android/com/dooble/phonertc/VideoTrackRendererPair.java" target-dir="app/src/com/dooble/phonertc" />
+        <source-file src="src/android/nl/neatsoft/phonertc/PhoneRTCPlugin.java" target-dir="app/src/nl/neatsoft/phonertc" />
+        <source-file src="src/android/nl/neatsoft/phonertc/Session.java" target-dir="app/src/nl/neatsoft/phonertc" />
+		<source-file src="src/android/nl/neatsoft/phonertc/SessionConfig.java" target-dir="app/src/nl/neatsoft/phonertc" />
+        <source-file src="src/android/nl/neatsoft/phonertc/VideoGLView.java" target-dir="app/src/nl/neatsoft/phonertc" />
+    	<source-file src="src/android/nl/neatsoft/phonertc/VideoConfig.java" target-dir="app/src/nl/neatsoft/phonertc" />
+    	<source-file src="src/android/nl/neatsoft/phonertc/VideoTrackRendererPair.java" target-dir="app/src/nl/neatsoft/phonertc" />
     	
         <config-file target="app/src/main/res/xml/config.xml" parent="/*">
 			<feature name="PhoneRTCPlugin">
-				<param name="android-package" value="com.dooble.phonertc.PhoneRTCPlugin" />
+				<param name="android-package" value="nl.neatsoft.phonertc.PhoneRTCPlugin" />
 			</feature>	
         </config-file>
 
